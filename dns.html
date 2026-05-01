@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS - Domain Name System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <nav>
+        <h2> Internet Lexicon</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="www.html">WWW</a></li>
+            <li><a href="tcp-ip.html">TCP/IP</a></li>
+            <li><a href="browser.html">Browsers</a></li>
+            <li><a href="server.html">Web Servers</a></li>
+            <li><a href="url.html">URL</a></li>
+            <li><a href="dns.html">DNS</a></li>
+            <li><a href="http.html">HTTP</a></li>
+            <li><a href="intranet.html">Intranet</a></li>
+            <li><a href="extranet.html">Extranet</a></li>
+            <li><a href="multitier.html">Multitier</a></li>
+            <li><a href="ftp.html">FTP</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="web1.0.html">Web 1.0</a></li>
+            <li><a href="web2.0.html">Web 2.0</a></li>
+            <li><a href="web3.0.html">Web 3.0</a></li>
+            <li><a href="web4.0.html">Web 4.0</a></li>
+        </ul>
+    </nav> 
+    <div class="container">
+        <h1>Domain Name System (DNS)</h1>
+
+        <img src="images/dns.jpg" alt="DNS illustration" class="content-img">
+
+        <div class="term-definition">
+           <p>The <strong>Domain Name System (DNS)</strong> is the phonebook of the internet, translating human-readable domain names (google.com) into machine-readable IP addresses (142.250.190.46).</p>
+        </div>
+
+        <h2> How DNS Works</h2>
+        <ol>
+            <li>You type "example.com" into browser</li>
+            <li>Browser checks local cache for IP address</li>
+            <li>Query sent to Recursive Resolver (usually your ISP)</li>
+            <li>Resolver asks Root Nameserver for .com TLD location</li>
+            <li>TLD Nameserver directs to Authoritative Nameserver for example.com</li>
+            <li>Authoritative Nameserver returns IP address</li>
+            <li>Browser now can request website from that IP</li>
+        </ol>
+
+        <div class="term-definition">
+            <p>💡 DNS was invented by Paul Mockapetris in 1983. Before DNS, everyone had to use a single HOSTS.txt file that was manually downloaded!</p>
+        </div>
+    </div>
+
+        <footer>
+            <p> Internet Terminology Project | <a href="index.html">Back to Home</a> | DNS - The Internet's Directory Service</p>
+</body>
+</html>
