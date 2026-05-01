@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Terminology Hub</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            color: #1a2a3a;
+            line-height: 1.6;
+        }
+        nav {
+            background: #1e3c72;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav h2 {
+            display: inline;
+            margin-right: 2rem;
+            font-size: 1.2rem;
+        }
+        .nav-links {
+            display: inline;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2a5298;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            margin-bottom: 0.8rem;
+            color: #1e3c72;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 1rem;
+            text-decoration: none;
+            background: #1e3c72;
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #1e3c72;
+            color: white;
+            margin-top: 3rem;
+        }
+        h1 { color: #1e3c72; border-left: 5px solid #1e3c72; padding-left: 1rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>🌐 Internet Lexicon</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="www.html">WWW</a>
+            <a href="tcpip.html">TCP/IP</a>
+            <a href="browser.html">Web Browsers</a>
+            <a href="webserver.html">Web Servers</a>
+            <a href="url.html">URL</a>
+            <a href="dns.html">DNS</a>
+            <a href="http.html">HTTP</a>
+            <a href="intranet.html">Intranet</a>
+            <a href="extranet.html">Extranet</a>
+            <a href="multitier.html">Multitier</a>
+            <a href="ftp.html">FTP</a>
+            <a href="html.html">HTML</a>
+            <a href="web1.0.html">Web 1.0</a>
+            <a href="web2.0.html">Web 2.0</a>
+            <a href="web3.0.html">Web 3.0</a>
+            <a href="web4.0.html">Web 4.0</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>📖 Internet Terminology Encyclopedia</h1>
+        <p>Click any card below to explore detailed explanations of core Internet technologies and web evolution phases.</p>
+        <div class="card-grid">
+            <div class="card"><img src="images/www-icon.png" alt="WWW"><h3>World Wide Web</h3><p>System of interlinked hypertext documents accessed via the Internet.</p><a href="www.html">Read more →</a></div>
+            <div class="card"><img src="images/tcpip-icon.png" alt="TCP/IP"><h3>TCP/IP</h3><p>Foundation communication protocols for the Internet.</p><a href="tcpip.html">Read more →</a></div>
+            <div class="card"><img src="images/browser-icon.png" alt="Browser"><h3>Web Browsers</h3><p>Software to retrieve, present, and traverse web resources.</p><a href="browser.html">Read more →</a></div>
+            <div class="card"><img src="images/webserver-icon.png" alt="Web Server"><h3>Web Servers</h3><p>Hardware/software that delivers web content to clients.</p><a href="webserver.html">Read more →</a></div>
+            <div class="card"><img src="images/url-icon.png" alt="URL"><h3>URL</h3><p>Unique address for resources on the web.</p><a href="url.html">Read more →</a></div>
+            <div class="card"><img src="images/dns-icon.png" alt="DNS"><h3>DNS</h3><p>Translates domain names to IP addresses.</p><a href="dns.html">Read more →</a></div>
+            <div class="card"><img src="images/http-icon.png" alt="HTTP"><h3>HTTP</h3><p>Protocol for transmitting hypermedia documents.</p><a href="http.html">Read more →</a></div>
+            <div class="card"><img src="images/intranet-icon.png" alt="Intranet"><h3>Intranet</h3><p>Private network within an organization.</p><a href="intranet.html">Read more →</a></div>
+            <div class="card"><img src="images/extranet-icon.png" alt="Extranet"><h3>Extranet</h3><p>Controlled private network allowing external partners.</p><a href="extranet.html">Read more →</a></div>
+            <div class="card"><img src="images/multitier-icon.png" alt="Multitier"><h3>Multitier Architecture</h3><p>Client-server architecture with separated layers.</p><a href="multitier.html">Read more →</a></div>
+            <div class="card"><img src="images/ftp-icon.png" alt="FTP"><h3>FTP</h3><p>Standard protocol for transferring files.</p><a href="ftp.html">Read more →</a></div>
+            <div class="card"><img src="images/html-icon.png" alt="HTML"><h3>HTML</h3><p>Standard markup language for web pages.</p><a href="html.html">Read more →</a></div>
+            <div class="card"><img src="images/web1-icon.png" alt="Web 1.0"><h3>Web 1.0</h3><p>Read-only web (1990s–early 2000s).</p><a href="web1.0.html">Read more →</a></div>
+            <div class="card"><img src="images/web2-icon.png" alt="Web 2.0"><h3>Web 2.0</h3><p>Read-write web, social media, user-generated content.</p><a href="web2.0.html">Read more →</a></div>
+            <div class="card"><img src="images/web3-icon.png" alt="Web 3.0"><h3>Web 3.0</h3><p>Semantic web, decentralized, AI-driven.</p><a href="web3.0.html">Read more →</a></div>
+            <div class="card"><img src="images/web4-icon.png" alt="Web 4.0"><h3>Web 4.0</h3><p>Symbiotic web, IoT, ubiquitous intelligence.</p><a href="web4.0.html">Read more →</a></div>
+        </div>
+    </div>
+    <footer>Internet Terminology Project | © 2025</footer>
+</body>
+</html>
